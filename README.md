@@ -1,11 +1,18 @@
 # Front-end
 Create your index page
+
 Before you start coding sketch up how your web pages should look like. You can do it on paper or with any wire frame application. This is your choice. The purpose is to visualize different sections and parts that will be in your page and how should they be arranged.
+
 Create a new html file in your repository root directory named: index.html
+
 Set the doctype to HTML5
+
 Add <head> part and setup basic meta data and the <title> of the page
+
 Add part
+
 Add <header> to the body which will contain navigation menu. First menu item should link to index.
+
 Add a <div> element to the body which has a class named: content. This will contain the part of the pages which differs from each other.
 Add an image of you and a small introduction next to it about yourself.
 Add some content to it (e.g. the description of the exercise) to see where will it be. You can fill it with arbitrary content. Take care to use the different html tags properly so it can express your intent.
