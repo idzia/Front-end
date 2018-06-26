@@ -7,7 +7,7 @@ Create a new html file in your repository root directory named: index.html
 
 Set the doctype to HTML5
 
-Add <head> part and setup basic meta data and the <title> of the page
+Add \\<head> part and setup basic meta data and the <title> of the page
 
 Add part
 
