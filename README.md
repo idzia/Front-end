@@ -1,5 +1,5 @@
 # Front-end
-##Create your index page
+## Create your index page
 
 Before you start coding sketch up how your web pages should look like. You can do it on paper or with any wire frame     application. This is your choice. The purpose is to visualize different sections and parts that will be in your page and how should they be arranged.
 
@@ -23,7 +23,7 @@ Add <footer> and add some content to it. Take example from other sites.
 
 After you finish commit your changes into your repository with a descriptive comment.
 
-##Make it nice
+## Make it nice
 
 Create a new folder named css in your repository's root directory
 
@@ -35,7 +35,7 @@ Define basic rules for the body element. (Default background, font, alignment...
 
 Write css rules to make all the site like your sketch.
 
-##Create a contact page
+## Create a contact page
 
 Copy your index.html file and give it the name: contact.html
 
@@ -53,7 +53,7 @@ Open your style.css file and at the bottom of it and write some rules which make
 
 Commit your changes into your repository.
 
-##Add JavaScript form validation to contact page
+## Add JavaScript form validation to contact page
 
 Write code that will enable submit button if all form fields are not empty. It should get back to being disabled if content of any field will be empty again.
 
@@ -77,7 +77,7 @@ After that, each field of form should be cleared.
 
 After you finish commit your changes into your repository with a descriptive comment. If you feel that it would be good to have separate commits for each step, do it.
 
-##Create your custom pages
+## Create your custom pages
 
 Create your new html file(s) based on the index.html
 
