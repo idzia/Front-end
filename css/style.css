@@ -49,7 +49,7 @@ table {
 
 html {
     font-family: Garuda;
-    font-size 16;
+    font-size: 16px;
     color:#333333;
     background:#ffffff;
     height: 100%;
@@ -68,6 +68,7 @@ header {
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
+    margin-top: 5px;
 
 }
 
@@ -89,27 +90,33 @@ header a.selected {
 
 div.content {
     width: 100%;
-    height:50%;
+    height:auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center
+    align-items: flex-start;
+    min-height: 400px;
 }
 
 div.intro {
+
     width: 25%;
     height:25%;
-
+    margin: 150px 0px;
+    padding: 50px;
     border-top: medium dashed #333333;
     border-bottom: medium dashed #333333;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+
     align-items: center
 }
 
+article {
+    padding: 30px 10px;
+}
 
 footer {
     width: 100%;
@@ -138,8 +145,8 @@ footer div.center {
     border-right: medium dashed #ffffff;
 }
 
-img.bottomPicture {
-    padding: 5px; 5px
+img {
+    padding: 5px 5px
 }
 
 footer li {
@@ -148,5 +155,85 @@ margin: 5%; 5%
 
 footer a {
 color:#FF1E00;
+}
 
+form.loginForm {
+    width: 450px;
+    height: 210px;
+    background: url('../image/key-3348307__340.jpg') no-repeat;
+    background-position: -60px 20px;
+    align-self:center;
+   }
+
+h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color:#FF1E00;
+    font-family: Garuda;
+    margin: 15px 0px
+}
+
+h2 {
+    font-size: 25px;
+    color:#333333;
+    font-family: Garuda;
+
+
+}
+
+input[type=text] {
+    padding:5px;
+    border:1px solid #333333;
+    border-radius: 5px;
+}
+
+input[type=password] {
+    padding:5px;
+    border:1px solid #333333;
+    border-radius: 5px;
+}
+
+
+input[type=submit] {
+    padding:5px 15px;
+    background:#FF1E00;
+    color: #ffffff;
+    font-weight: bold;
+    cursor:pointer;
+    border-radius: 5px;
+}
+
+button {
+    padding:5px 15px;
+    background-color:#FF1E00;
+    color: #ffffff;
+    font-weight: bold;
+    cursor:pointer;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+textarea{
+   padding:5px;
+   border:1px solid #333333;
+   border-radius: 5px;
+}
+
+
+fieldset {
+    padding:25px;
+    border:1px solid #333333;
+    border-radius: 5px;
+
+}
+
+.loginForm fieldset {
+    padding-left: 215px;
+    height: 171px;
+
+}
+
+.loginForm label {
+    color: #ffffff
 }
