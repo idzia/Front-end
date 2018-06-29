@@ -19,7 +19,7 @@
 <header>
 
     <a href="index.html">Home</a>
-    <a href="about.html">About me</a>
+    <a href="aboutMe.html">About me</a>
     <a href="contact.html" class="selected">Contact</a>
     <a href="login.html">Login</a>
 </header>
@@ -35,20 +35,24 @@
     </article>
 
     <article>
-        <form id="contact" action="" method="post">
+        <form id="contact" action="" method="post" onsubmit="return validation()">
             <fieldset>
 
                 <legend> Write to me </legend>
                 <label for="fname">First name: </label><br>
                 <input type="text" name="firstname" id="fname" onkeyup="switchVisibility()">
+                <div class="error" id="fname-error" style="display: none">Incorrect data, case sensitive</div>
                 <br><br>
                 <label for="e-mail">e-mail: </label><br>
-                        <input type="text" name="e-mail" id="e-mail" onkeyup="switchVisibility()">
-                        <div class="error" id="email-error" style="display: none">Validation failed</div>
+                <input type="text" name="e-mail" id="e-mail" onkeyup="switchVisibility()">
+                <div class="error" id="email-error" style="display: none">Incorrect email</div>
                 <br><br><br>
-                <textarea name="message" rows="10" cols="50"></textarea>
+                <textarea name="message" id="message" rows="10" cols="50"></textarea>
+                <div class="error" id="message-error" style="display: none">Message is empty</div>
                 <br>
                 <button type="submit" id="send" style="float:right" disabled>Send</button>
+
+
                 <br><br><br>
 
             </fieldset>
