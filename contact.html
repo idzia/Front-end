@@ -2,11 +2,19 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>First Website</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="script/behavior.js"></script>
+
+
+
+
 </head>
+
 <body>
 <header>
 
@@ -27,18 +35,22 @@
     </article>
 
     <article>
-        <form action="" method="post">
+        <form id="contact" action="" method="post">
             <fieldset>
+
                 <legend> Write to me </legend>
                 <label for="fname">First name: </label><br>
-                <input type="text" name="firstname">
+                <input type="text" name="firstname" id="fname" onkeyup="switchVisibility()">
                 <br><br>
                 <label for="e-mail">e-mail: </label><br>
-                <input type="text" name="e-mail">
+                        <input type="text" name="e-mail" id="e-mail" onkeyup="switchVisibility()">
+                        <div class="error" id="email-error" style="display: none">Validation failed</div>
                 <br><br><br>
                 <textarea name="message" rows="10" cols="50"></textarea>
                 <br>
-                <input type="submit" value="Send" style="float: right">
+                <button type="submit" id="send" style="float:right" disabled>Send</button>
+                <br><br><br>
+
             </fieldset>
         </form>
     </article>

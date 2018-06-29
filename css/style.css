@@ -214,6 +214,16 @@ button {
 
 }
 
+.error {
+    color: red;
+}
+
+button:disabled {
+    background-color: #FF787C;
+    color: #E0E0E0;
+    cursor: auto;
+}
+
 textarea{
    padding:5px;
    border:1px solid #333333;
