@@ -37,7 +37,7 @@ ol, ul {
 blockquote, q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
+blockquo</article>te:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
@@ -46,6 +46,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* body */
 
 html {
     font-family: Garuda;
@@ -78,7 +80,7 @@ header a {
     align-self: center;
     background: #333333;
     color:#ffffff;
-    text-decoration: none
+    text-decoration: none;
 }
 
 header a.selected {
@@ -114,6 +116,8 @@ article {
     padding: 30px 10px;
 }
 
+
+
 footer {
     width: 100%;
     height: auto;
@@ -129,20 +133,40 @@ footer div {
     height:90%;
     background: #333333;
     color:#ffffff;
-    padding: 10px; 10px
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    padding: 10px;
 }
 
 footer div.center {
     border-left: medium dashed #ffffff;
     border-right: medium dashed #ffffff;
+    float: left;
 }
 
 img {
-    padding: 5px 5px
+    padding: 5px 10px 5px 5px
 }
+
+img.articleImg{
+    float: left;
+    width:320px;
+    height:210px
+
+}
+
+.center img {
+    float: left;
+}
+
+.small {
+    width: 90px;
+    height: 90px;
+}
+
+.medium {
+    width: 100px;
+    height: 100px;
+}
+
 
 footer li {
 margin: 5%;
@@ -150,14 +174,6 @@ margin: 5%;
 
 footer a {
 color:#FF1E00;
-}
-
-form.loginForm {
-    width: 450px;
-    height: 210px;
-    background: url('../image/key-3348307__340.jpg') no-repeat;
-    background-position: -60px 20px;
-    align-self:center;
 }
 
 h1 {
@@ -174,18 +190,25 @@ h2 {
     font-family: Garuda;
 }
 
+#sendForm {
+    display: flex;
+    flex-direction: row;
+
+}
+
 input[type=text] {
+    margin: 0px 0px 20px 0px;
     padding:5px;
     border:1px solid #333333;
     border-radius: 5px;
 }
 
 input[type=password] {
+    margin: 0px 0px 20px 0px;
     padding:5px;
     border:1px solid #333333;
     border-radius: 5px;
 }
-
 
 input[type=submit] {
     padding:5px 15px;
@@ -197,18 +220,33 @@ input[type=submit] {
 }
 
 button {
-    padding:5px 15px;
+    margin:  20px 0px 0px 0px;
+    padding: 5px 5px;
     background-color:#FF1E00;
     color: #ffffff;
     font-weight: bold;
     cursor:pointer;
     border-radius: 5px;
     text-align: center;
+
 }
 
-.error {
+#send {
+    float: right;
+}
+
+div.error {
+    display: none;
     color: red;
 }
+
+div.error-login {
+    color: yellow;
+    font-weight: bold;
+    text-align: right;
+    display: none;
+}
+
 
 button:disabled {
     background-color: #FF787C;
@@ -217,22 +255,39 @@ button:disabled {
 }
 
 textarea{
-   padding:5px;
-   border:1px solid #333333;
+   margin: 20px 0px 0px 0px;
+   padding: 5px;
+   border: 1px solid #333333;
    border-radius: 5px;
 }
 
 
 fieldset {
-    padding:25px;
-    border:1px solid #333333;
+    padding: 15px;
+    margin: 15px 5px;
+    border: 1px solid #333333;
     border-radius: 5px;
 
 }
 
-.loginForm fieldset {
-    padding-left: 215px;
-    height: 171px;
+form.loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 450px;
+    height: 250px;
+    background: url('../image/key-3348307__340.jpg') no-repeat;
+    background-position: -60px 0px;
+    padding:15px 10px 0px 10px;
+
+}
+
+fieldset.login {
+    width: 470px;
+    height: 290px;
+    padding: 0px;
+    margin: 0px;
+
 }
 
 .loginForm label {

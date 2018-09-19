@@ -3,93 +3,83 @@
 
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <title>First Website</title>
-    <link rel="stylesheet" href="css/style.css">
+    <head>
+        <meta charset="utf-8">
+        <title>First Website</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="script/behavior.js" defer></script>
+    </head>
 
-    <script src="script/behavior.js"></script>
-
-
-
-
-</head>
-
-<body>
-<header>
-
-    <a href="index.html">Home</a>
-    <a href="aboutMe.html">About me</a>
-    <a href="contact.html" class="selected">Contact</a>
-    <a href="login.html">Login</a>
-</header>
+    <body>
+    <header>
+        <a href="index.html">Home</a>
+        <a href="aboutMe.html">About me</a>
+        <a href="contact.html" class="selected">Contact</a>
+        <a href="login.html">Login</a>
+    </header>
 
 
-<div class="content">
-    <article>
-        <fieldset>
-            <legend> Where I am on the map </legend>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10245.937887270422!2d19.92767662128885!3d50.05848796104122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1530095741501" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </fieldset>
-
-    </article>
-
-    <article>
-        <form id="contact" action="" method="post" onsubmit="return validation()">
+    <div class="content">
+        <div>
             <fieldset>
-
-                <legend> Write to me </legend>
-                <label for="fname">First name: </label><br>
-                <input type="text" name="firstname" id="fname" onkeyup="switchVisibility()">
-                <div class="error" id="fname-error" style="display: none">Incorrect data, case sensitive</div>
-                <br><br>
-                <label for="e-mail">e-mail: </label><br>
-                <input type="text" name="e-mail" id="e-mail" onkeyup="switchVisibility()">
-                <div class="error" id="email-error" style="display: none">Incorrect email</div>
-                <br><br><br>
-                <textarea name="message" id="message" rows="10" cols="50"></textarea>
-                <div class="error" id="message-error" style="display: none">Message is empty</div>
-                <br>
-                <button type="submit" id="send" style="float:right" disabled>Send</button>
-
-
-                <br><br><br>
-
+                <legend> Where I am on the map </legend>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10245.937887270422!2d19.92767662128885!3d50.05848796104122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1530095741501" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </fieldset>
-        </form>
-    </article>
+        </div>
 
-</div>
+        <div>
+            <form id="contact" action="" method="post">
+                <fieldset id = "sendForm">
 
-<footer>
-    <div class="left">
-        <img src="image/programming-1873854__340.png" alt="code" width="90" height="90">
-        <img src="image/business-3152586__340 (1).jpg" alt="hand" width="90" height="90">
-        <img src="image/office-925806__340.jpg" alt="laptop" width="90" height="90">
-        <img src="image/agreement-2548138__340.jpg" alt="office" width="90" height="90">
+                    <legend> Write to me </legend>
+                    <label for="fname">First name: </label>
+                    <input id="fname" type="text" name="firstname" placeholder="Your name">
+                    <div id="fname-error" class="error" >Validation failed, case sensitive</div>
+
+                    <label for="e-mail">e-mail: </label>
+                    <input type="text" name="e-mail" id="e-mail" placeholder="Your email">
+                    <div id="email-error" class="error" >Validation failed</div>
+
+                    <textarea id="message" name="message" rows="10" cols="50"></textarea>
+                    <div id="message-error" class="error" placeholder="Your message">Validation failed</div>
+
+                    <button type="submit" id="send" disabled>Send</button>
+
+                </fieldset>
+            </form>
+        </div>
+
     </div>
 
-    <div class="center">
-        <img class="bottomPicture"src="image/coffee-2242213__340.jpg" alt="coffe" width="100" height="100" style="float: left">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Integer commodo ornare ipsum nec porta. Vivamus maximus pretium lacus nec vehicula.
-            Duis consectetur mi vel sem vulputate, eget luctus justo lacinia. Duis ac luctus urna.
-            Maecenas a nisi id erat pharetra sodales.
-        </p>
-        <a href="https://www.w3schools.com">Read more...</a>
-    </div>
+    <footer>
+        <div class="left">
+            <img class="small" src="image/programming-1873854__340.png" alt="code" />
+            <img class="small" src="image/business-3152586__340.jpg" alt="hand" />
+            <img class="small" src="image/office-925806__340.jpg" alt="laptop" />
+            <img class="small" src="image/agreement-2548138__340.jpg" alt="office" />
+        </div>
 
-    <div class="right">
-        <p>MY LINKS LIST</p>
-        <ul>
-            <li><a href="https://translate.google.pl">Translator</a></li>
-            <li><a href="https://css-tricks.com">About css</a></li>
-            <li><a href="https://pixabay.com">Photo</a></li>
-        </ul>
-    </div>
-</footer>
+        <div class="center">
+            <img class="medium" class="bottomPicture" src="image/coffee-2242213__340.jpg" alt="coffe" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Integer commodo ornare ipsum nec porta. Vivamus maximus pretium lacus nec vehicula.
+                Duis consectetur mi vel sem vulputate, eget luctus justo lacinia. Duis ac luctus urna.
+                Maecenas a nisi id erat pharetra sodales.
+            </p>
+            <a href="https://www.w3schools.com">Read more...</a>
+        </div>
 
-</body>
+        <div class="right">
+            <p>MY LINKS LIST</p>
+            <ul>
+                <li><a href="https://translate.google.pl">Translator</a></li>
+                <li><a href="https://css-tricks.com">About css</a></li>
+                <li><a href="https://pixabay.com">Photo</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    </body>
 
 
 </html>
